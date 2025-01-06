@@ -66,15 +66,18 @@ if users.get(username) == password:
                 stats["numeric"] += 1
                 stats["sum_numbers"] += int(word)
 
-        print(f"There are {stats['total']} words in the selected text.")
-        print(f"There are {stats['titlecase']} titlecase words.")
-        print(f"There are {stats['uppercase']} uppercase words.")
-        print(f"There are {stats['lowercase']} lowercase words.")
-        print(f"There are {stats['numeric']} numeric strings.")
-        print(f"The sum of all the numbers is {stats['sum_numbers']}.")
-        print(dash)
-        print("LEN|\tOCCURENCES\t|NR.")
-        print(dash)
+        print(
+        f"There are {stats['total']} words in the selected text.",
+        f"There are {stats['titlecase']} titlecase words.",
+        f"There are {stats['uppercase']} uppercase words.",
+        f"There are {stats['lowercase']} lowercase words.",
+        f"There are {stats['numeric']} numeric strings.",
+        f"The sum of all the numbers is {stats['sum_numbers']}.",
+        dash,
+        "LEN|\tOCCURENCES\t|NR.",
+        dash,
+        sep="\n"
+        )
 
         lengths = {len(word): 0 for word in words if word.isalnum()}
         for word in words:

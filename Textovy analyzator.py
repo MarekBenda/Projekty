@@ -84,6 +84,6 @@ if users.get(username) == password:
         for length, count in sorted(lengths.items()):
             print(f"{length:>3}|{'*' * count:<20}|{count:>2}")
     else:
-        print("Your input was incorrect, terminating the program..")
+        print("Your input was incorrect, terminating the program.")
 else:
-    print("Unregistered user, terminating the program..")
+    print("Unregistered user, terminating the program.")

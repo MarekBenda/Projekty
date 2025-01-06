@@ -74,7 +74,7 @@ if users.get(username) == password:
         f"There are {stats['numeric']} numeric strings.",
         f"The sum of all the numbers is {stats['sum_numbers']}.",
         dash,
-        "LEN|\tOCCURENCES\t|NR.",
+        f"{'LEN':>3}|{'OCCURENCES':^20}|{'NR.':>2}",
         dash,
         sep="\n"
         )
